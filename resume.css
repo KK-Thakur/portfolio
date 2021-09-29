@@ -1,0 +1,464 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+/* header */
+    /* body header */
+#header_background{
+    height: 65vh;
+    width: 100%;
+    background-image: url("img/background_image1.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    background-attachment: fixed;
+    
+}
+
+    /* nav */
+nav a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav{
+    padding-top: 25px;
+}
+nav a:hover{
+    color:lightgray;
+    border-bottom: 1px solid white;
+    transition: color 3s, border-bottom 3s;
+}
+
+/* name */
+#name{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 23vh;
+    letter-spacing: 0.1rem;
+    font-family: sans-serif;
+    line-height: 1.5rem;
+}
+
+.text_center{
+    text-align: center;
+}
+/* social */
+#social-media a i{
+    color: white;
+    padding: 6px 6px;
+    margin: 0px 11px;
+    font-size: 1.8rem;
+    border-radius: 50%;
+}
+#social-media a i:hover{
+    box-shadow: 0px 0px 6px 5px rgba(230,196,196,0.3);
+}
+/* photo  */
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto; /*to align image in center*/
+    margin-top: -13vh;
+    /* margin-bottom: 4rem; */
+}
+#my-image img{
+    height: 100%; /* means height will 100% size of it's parent(my-image) height(12rem)*/
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 2px lightgray;
+    border: 4px solid white;
+    position: relative;  /*because of opacity*/
+}
+ /* common section css */
+section{
+    width: 76%;
+    padding: 7vh 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section #about{
+    flex-direction: row;
+    align-items: center;
+}
+/* background commonly for sections */
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+section:nth-child(2n+1){
+    background-color: white;
+}
+/* about section */
+#about{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: grey;
+}
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+/* skills */
+
+/* common heading section for all section */
+.section_heading{
+    font-size: 2.1rem;
+    color: #2857a4;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 0px;
+    margin-bottom: 6%;
+    width: 90vw;
+    text-align: center;
+}
+ /* skill section */
+.skills_display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.skill_progress{
+    width: 11rem;
+    height: 2.2rem;
+    border-radius: 1rem;
+    background-color: lightgrey;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 45px;
+    overflow: hidden;
+}
+.skill_progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+.skill_name span{
+    color: white;
+    font-size: 1.2rem;
+}
+.skill_name{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+/* cpp */
+.seventy_five_percent{
+    width: 75%;
+    height: inherit;
+}
+.mb_blue {
+    background-color: #2857a4;
+}
+/* HTML */
+.eighty_five_percent{
+    width: 85%;
+    height: inherit;
+}
+.mb_orangered{
+    background-color: orangered;
+}
+/* CSS */
+.fifty_percent{
+    width: 50%;
+    height: inherit;
+}
+.mb_teal{
+    background-color: #0b8176;
+}
+/* javaScript */
+.zero_percent{
+    width: 2%;
+    height: inherit;
+}
+.mb_brown{
+    background-color: rgb(92, 71, 71);
+}
+/* java */
+.thirty_percent{
+    width: 30%;
+    height: inherit;
+}
+/* DSA */
+.sixty_percent{
+    width: 60%;
+    height: inherit;
+}
+
+/* work Experience  and Education */
+.timeline{
+    position: relative;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin: 3px 0px 8px;
+}
+
+.timeline_box{
+    position: relative;
+    width: 38%;
+    left: 7%;
+    padding: 5px;
+    margin-bottom: 8px;
+    min-height: 150px;
+    text-align: right;
+    /* border: 1px solid black; */
+}
+
+.timeline_box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline_box::after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    z-index: 1;
+}
+.timeline_box:nth-child(2n+1)::after{
+    right: -12.4%;
+}
+.timeline_box:nth-child(2n)::after{
+    left: -9.3%;
+}
+.timeline_divider{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    border: 2px dashed #0096fa6b;
+    width: 0px;
+    height: 74%;
+    color: #433E3F;
+}
+.timeline_divider .timeline_traveller{
+    position: sticky;
+    top: 15%;
+    z-index: 2;
+}
+.timeline_divider i{
+    transform: rotate(90deg);
+  	margin-top: -40px;
+    display: block;
+    color: #2857a4;
+    font-size: 1.8rem;
+}
+.timeline_logo {
+    position: absolute;
+    width: 60px;
+    overflow: hidden;
+}
+
+.timeline_logo > img {
+    width: 100%;
+}
+.m0{
+    margin: 0px;
+}
+.mb{
+    color: #2857a4;
+}
+.experience_designation {
+    font-size: 1.4rem;
+}
+.experience_company_name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 450;
+    font-size: 1.2rem;
+}
+.experience_duration{
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1.1rem;
+}
+.experience_description{
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+.text-align-justify {
+    text-align: justify;
+}
+
+    /* Portfolio */
+
+#portfolio_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio_image_container{
+    width: 17rem;
+    /* height: 17rem; */
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 45px;
+    position: relative;
+}
+.portfolio_image_container img{
+    width: 100%;
+    height: 100%;
+}
+
+.project_details{
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    /* padding: 10px; */
+}
+.project_details p{
+    font-size: 22px;
+    line-height: 28px;
+}
+.portfolio_image_container:hover {
+    box-shadow: 0px 0px 20px #74ADC8;
+}
+.portfolio_image_container:hover .project_details{
+    background-color: #80808078;
+    color: white;
+}
+
+/* contact section */
+#contact{
+    height: auto;
+    background-image: linear-gradient(45deg,lightblue,blue);
+    /* color: white; */
+}
+#contact_heading{
+    color: white;
+}
+
+#contact_container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 38px;
+}
+#contact_form_container{
+    width: 35%;
+}
+#contact_form_container input,textarea{
+    width: 90%;
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 6px;
+    color: #d9dcdd;
+    background-color: transparent;
+    border: 0px solid transparent; /*to don't appear top,right,left border*/
+    border-bottom: 2.5px solid white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    outline: none; /*to don't appear border at the time of input*/
+}
+#contact_form button[type="submit"]{
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px white solid;
+    padding: 2px 4px;
+    margin-top: 5%;
+    margin-left: 30%;
+    border-radius: 4px;
+    font-family: sans-serif;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em; 
+}
+#contact_form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+#contact_detail_container{
+    width: 50%;
+    color: white;
+    font-family: sans-serif;
+}
+#contact_detail_container p{
+    color: #d9dcdd;
+}
+.contact_info{
+    margin-bottom: 5px;
+    margin-bottom: 20px;
+    color: #d9dcdd;
+}
+.contact_info span{
+    margin-left: 0.4rem;
+}
+
+/* rule for device width less than 600px */
+@media screen and (max-width:600px){
+    /* Header*/
+    #name{
+        font-size: 1.3rem;
+        font-weight: 650;
+        color: white;
+        margin-top: 20vh;
+    }
+    /* image */
+    #my-image {
+        height: 10rem;
+        width: 10rem;
+    }
+    /* Education and work exp */
+    .timeline_divider{
+        left: 5%;
+    }
+    .timeline_box{
+        left: 12% !important;
+        width: 80%;
+    }
+    /* .timeline_box:nth-child(2n){
+        left: 12%;
+    } */
+    .timeline_box::after{
+        left: -11% !important;
+    }
+    html{
+        font-size: 15px;
+    }
+    #contact{
+        width: 92%;
+        padding: 7vh 4%;
+    }
+    #contact_form_container{
+        width: 40%;
+    }
+    #contact_form button[type="submit"]{
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 2px 2px;
+        margin-left: 12%;
+        background-color: lightcoral;
+    }
+    #contact_form_container input,textarea{
+        font-size: 1rem;
+        padding: 4px 2px;
+    }
+
+    header section
+}
