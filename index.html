@@ -13,16 +13,16 @@
 <body>
     <header id="top">
         <div id="header_background">
-            <nav class="text_center">
+            <nav class="nav_menu text_center">
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" class="nav_edu">About</a>
+                <a href="#skills" class="nav_edu">Skills</a>
+                <a href="#experience" class="nav_edu">Experience</a>
+                <a href="#education" class="nav_edu">Education</a>
+                <a href="#portfolio" class="nav_edu">Portfolio</a>
+                <a href="#contact" class="nav_edu">Contact</a>
             </nav>
-            <div id="name" class="text_center">
+            <div id="name">
                 <h1>Keshav Thakur</h1>
             </div>
             <div id="social-media" class="text_center">
@@ -54,44 +54,44 @@
                 </span>
                 <span>SKILLS</span>
             </h1>
-            <div class="skills_display">
+            <div id="skills_container"  class="skills_display">
                 <div class="skill_progress">
-                    <div class="seventy_five_percent mb_blue">
+                    <div class="seventy_five_percent mb_blue" data-bar-width="75">
                         <div class="skill_name">
                             <span>C++</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill_progress">
-                    <div class="eighty_five_percent mb_orangered">
+                    <div class="eighty_five_percent mb_orangered" data-bar-width="85">
                         <div class="skill_name">
                             <span>HTML</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill_progress">
-                    <div class="fifty_percent mb_teal">
+                    <div class="seventy_five_percent mb_teal" data-bar-width="75">
                         <div class="skill_name">
                             <span>CSS</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill_progress">
-                    <div class="zero_percent mb_brown">
+                    <div class="sixty_percent mb_brown" data-bar-width="60">
                         <div class="skill_name">
                             <span>JavaScript</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill_progress">
-                    <div class="thirty_percent mb_blue">
+                    <div class="thirty_percent mb_blue" data-bar-width="30">
                         <div class="skill_name">
                             <span>Java</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill_progress">
-                    <div class="sixty_percent mb_teal">
+                    <div class="sixty_percent mb_teal" data-bar-width="60">
                         <div class="skill_name">
                             <span>DSA</span>
                         </div>
@@ -122,7 +122,7 @@
                 </div>
             </div>
         </section>
-        <section id="education">
+        <section id="education" data-value="7">
             <h1 class="section_heading">
                 <span>
                     <i class="fas fa-graduation-cap"></i>
@@ -159,7 +159,7 @@
                         </div>
                         <h3 class="experience_designation mb m0">B Tech</h3>
                         <h4 class="experience_company_name">DYPCOE</h4>
-                        <h5 class="experience_duration m0">July 2016 - Till now</h5>
+                        <h5 class="experience_duration m0">July 2019 - Till now</h5>
                         <p class="experience_description text-align-justify">Currently persuing my Bacherlor's degree in IT from DYPCOE , Akurdi Pune affliated to SPPU.</p>
                     </div>
                 </div>
@@ -280,6 +280,9 @@
 
         </section>
     </main>
+
+
+    <script src="resume.js"></script>
 </body>
 
 </html>

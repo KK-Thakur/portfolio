@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     font-family: sans-serif;
+    /* box-sizing: border-box; */
 }
 /* header */
     /* body header */
@@ -44,6 +45,7 @@ nav a:hover{
     letter-spacing: 0.1rem;
     font-family: sans-serif;
     line-height: 1.5rem;
+    text-align: center;
 }
 
 .text_center{
@@ -167,16 +169,12 @@ section:nth-child(2n+1){
     background-color: orangered;
 }
 /* CSS */
-.fifty_percent{
-    width: 50%;
-    height: inherit;
-}
 .mb_teal{
     background-color: #0b8176;
 }
 /* javaScript */
-.zero_percent{
-    width: 2%;
+.sixty_percent{
+    width: 60%;
     height: inherit;
 }
 .mb_brown{
@@ -459,6 +457,4 @@ section:nth-child(2n+1){
         font-size: 1rem;
         padding: 4px 2px;
     }
-
-    header section
 }
