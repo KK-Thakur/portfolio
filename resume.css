@@ -1,19 +1,18 @@
 body{
     margin: 0px;
     font-family: sans-serif;
-    /* box-sizing: border-box; */
 }
 /* header */
     /* body header */
 #header_background{
-    height: 65vh;
+    height: 70vh;
     width: 100%;
     background-image: url("img/background_image1.jpg");
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
+    opacity: 0.7;
     background-attachment: fixed;
-    
+    overflow: hidden;
 }
 
     /* nav */
@@ -25,23 +24,25 @@ nav a{
     margin: 10px;
     text-decoration: none;
     display: inline-block;
+    font-size: 17px;
 }
 
-nav{
-    padding-top: 25px;
-}
 nav a:hover{
     color:lightgray;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
+    text-decoration: underline;
     transition: color 3s, border-bottom 3s;
 }
-
+#menu i{
+    font-size: 0;
+}
 /* name */
 #name{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: white;
-    margin-top: 23vh;
+    margin-top: 22vh;
+    margin-bottom: 5px;
     letter-spacing: 0.1rem;
     font-family: sans-serif;
     line-height: 1.5rem;
@@ -56,7 +57,7 @@ nav a:hover{
     color: white;
     padding: 6px 6px;
     margin: 0px 11px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     border-radius: 50%;
 }
 #social-media a i:hover{
@@ -76,7 +77,7 @@ nav a:hover{
     border-radius: 50%;
     box-shadow: 0px 0px 10px 2px lightgray;
     border: 4px solid white;
-    position: relative;  /*because of opacity*/
+    position: relative; 
 }
  /* common section css */
 section{
@@ -360,11 +361,11 @@ section:nth-child(2n+1){
     max-width: 90%;
     margin: 15px;
     padding: 4px 6px;
-    color: #d9dcdd;
+    color: whitesmoke;
     background-color: transparent;
     border: 0px solid transparent; /*to don't appear top,right,left border*/
     border-bottom: 2.5px solid white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     outline: none; /*to don't appear border at the time of input*/
 }
@@ -381,7 +382,7 @@ section:nth-child(2n+1){
     font-family: sans-serif;
     letter-spacing: 0.046875em;
     line-height: 1;
-    padding: 0.8em 0.8em 0.78em; 
+    padding: 0.9em 0.8em 0.78em; 
 }
 #contact_form button:hover {
     background: white;
@@ -395,14 +396,15 @@ section:nth-child(2n+1){
     width: 50%;
     color: white;
     font-family: sans-serif;
+    font-size: 1.1rem;
 }
 #contact_detail_container p{
-    color: #d9dcdd;
+    color: whitesmoke;
 }
 .contact_info{
     margin-bottom: 5px;
     margin-bottom: 20px;
-    color: #d9dcdd;
+    color: whitesmoke;
 }
 .contact_info span{
     margin-left: 0.4rem;
@@ -415,7 +417,7 @@ section:nth-child(2n+1){
         font-size: 1.3rem;
         font-weight: 650;
         color: white;
-        margin-top: 20vh;
+        margin-top: 22vh;
     }
     /* image */
     #my-image {
@@ -424,37 +426,111 @@ section:nth-child(2n+1){
     }
     /* Education and work exp */
     .timeline_divider{
-        left: 5%;
+        left: 1%;
     }
     .timeline_box{
-        left: 12% !important;
-        width: 80%;
+        left: 10% !important;
+        width: 88%;
     }
     /* .timeline_box:nth-child(2n){
         left: 12%;
     } */
     .timeline_box::after{
-        left: -11% !important;
+        left: -12% !important;
     }
     html{
         font-size: 15px;
     }
+
+    /* portfolio */
+    .portfolio_image_container{
+        margin: 15px;
+    }
+
+    /* contact section */
     #contact{
         width: 92%;
         padding: 7vh 4%;
     }
-    #contact_form_container{
-        width: 40%;
-    }
+
     #contact_form button[type="submit"]{
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 600;
-        padding: 2px 2px;
-        margin-left: 12%;
+        padding: 4px 2px 3px;
+        margin-left: 18%;
         background-color: lightcoral;
     }
     #contact_form_container input,textarea{
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 4px 2px;
+    }
+
+    #contact_container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #contact_form_container{
+        width: 90%;
+    }
+    #contact_detail_container{
+        width: 80%;
+        margin-top: 9%;
+    }
+
+}
+@media screen and (max-width:700px){
+    #navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 20px;
+        box-sizing: border-box;
+        height: 0;  
+    }
+    #navigation i{
+        font-size: 30px;
+        color: white;
+    }
+    #navigation a{
+        /* text-align: justify; */
+        padding: 0;
+    }
+    #menu_list a{
+        display: block;
+        font-size: 0px;
+        line-height: 0px;
+    }
+    #menu_list{
+        height: 0;
+        width: 0;
+        text-align: justify;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 0;
+        z-index: 2;
+    }
+    #menu:hover #menu_list{
+        height: auto;
+        width: 120px;
+        background-color: rgb(14, 139, 177);
+    }
+    #menu:hover #menu_list a{
+        padding: 6px 0px 6px 5px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:350px){
+    #name{
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-top: 18vh;
     }
 }

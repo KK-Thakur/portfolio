@@ -8,7 +8,7 @@ for(var i=1;i<nav.length-1;i++){
     
         var interval=setInterval(function(){
             var targetSectionCoordinate=targetSection.getBoundingClientRect();
-            console.log(targetSectionCoordinate.top)
+            // console.log(targetSectionCoordinate.top)
             if(targetSectionCoordinate.top <= 0){
                 clearInterval(interval);
                 return;
@@ -57,3 +57,14 @@ function checkScroll(){
         }
     }
 }
+
+/*   Not working
+
+var menu_list=document.getElementById('menu_list');
+var menu_a=document.querySelectorAll('#menu_list a');
+function list(){
+    menu_list.style.height='80 px';
+    menu_list.style.width='120 px';
+    menu_list.style.backgroundColor='rgb(14, 139, 177)';
+}
+*/
