@@ -301,8 +301,8 @@ section:nth-child(2n+1){
 }
 
 .portfolio_image_container{
-    width: 17rem;
-    /* height: 17rem; */
+    width: 18rem;
+    height: 18rem;
     max-width: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -326,8 +326,13 @@ section:nth-child(2n+1){
     /* padding: 10px; */
 }
 .project_details p{
-    font-size: 22px;
+    font-size: 27px;
+    font-weight: 500;
     line-height: 28px;
+}
+.project_details{
+    padding:30% 2% 0 2%;
+    box-sizing: border-box;
 }
 .portfolio_image_container:hover {
     box-shadow: 0px 0px 20px #74ADC8;
@@ -355,6 +360,7 @@ section:nth-child(2n+1){
 }
 #contact_form_container{
     width: 35%;
+    margin-top: 7vh;
 }
 #contact_form_container input,textarea{
     width: 90%;
@@ -365,10 +371,11 @@ section:nth-child(2n+1){
     background-color: transparent;
     border: 0px solid transparent; /*to don't appear top,right,left border*/
     border-bottom: 2.5px solid white;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.4rem;
+    line-height: 2;
     outline: none; /*to don't appear border at the time of input*/
 }
+
 #contact_form button[type="submit"]{
     background-color: transparent;
     color: white;
@@ -396,7 +403,8 @@ section:nth-child(2n+1){
     width: 50%;
     color: white;
     font-family: sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    margin-top: 6vh;
 }
 #contact_detail_container p{
     color: whitesmoke;
@@ -409,7 +417,13 @@ section:nth-child(2n+1){
 .contact_info span{
     margin-left: 0.4rem;
 }
-
+#contact #social-media{
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+#contact #social-media i{
+    font-size: 30px;
+}
 /* rule for device width less than 600px */
 @media screen and (max-width:600px){
     /* Header*/
@@ -531,6 +545,6 @@ section:nth-child(2n+1){
     #name{
         font-size: 1.1rem;
         font-weight: 600;
-        margin-top: 18vh;
+        margin-top: 22vh;
     }
 }
