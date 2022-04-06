@@ -53,23 +53,49 @@ nav a:hover{
     text-align: center;
 }
 /* social */
-#social-media a i{
-    color: white;
-    padding: 6px 6px;
-    margin: 0px 11px;
-    font-size: 1.4rem;
+#social-media a{
+    text-align: center;
+    margin: 0 10px;
     border-radius: 50%;
+    padding: 6px;
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 11px 13px rgb(228 231 230 / 50%);
+    background: linear-gradient(0deg, #ddd, #fff);
 }
-#social-media a i:hover{
-    box-shadow: 0px 0px 6px 5px rgba(230,196,196,0.3);
+#social-media a i{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #c7c6c6);
+    border-radius: 50%;
+    line-height: calc(52px - 12px);
+    font-size: 23px;
+    color: #262626;
+    transition: .5s;
 }
+#header_background #social-media a{
+    width: 38px;
+    height: 38px;
+    box-shadow: 0 7px 11px rgb(228 231 230 / 50%);
+}
+#header_background #social-media i{
+    line-height: calc(38px - 10px);
+    font-size: 16px;
+}
+#social-media a:hover{
+    box-shadow: none;
+}
+
 /* photo  */
 #my-image{
     height: 12rem;
     width: 12rem;
     margin: auto; /*to align image in center*/
     margin-top: -13vh;
-    /* margin-bottom: 4rem; */
 }
 #my-image img{
     height: 100%; /* means height will 100% size of it's parent(my-image) height(12rem)*/
@@ -91,9 +117,14 @@ section #about{
     flex-direction: row;
     align-items: center;
 }
+
+#about div #hi{
+    font-size: 35px;
+}
+
 /* background commonly for sections */
 section:nth-child(2n){
-    background-color: #9e9b9b29;
+    background-color: #d6d2d229;
 }
 section:nth-child(2n+1){
     background-color: white;
@@ -106,7 +137,7 @@ section:nth-child(2n+1){
     font-weight: 100;
     letter-spacing: 1px;
     line-height: 28px;
-    color: grey;
+    color: rgb(138, 136, 136);
 }
 .text-highlight {
     color: #2857a4;
@@ -242,12 +273,12 @@ section:nth-child(2n+1){
 }
 .timeline_divider .timeline_traveller{
     position: sticky;
-    top: 15%;
+    top: 18%;
     z-index: 2;
 }
 .timeline_divider i{
     transform: rotate(90deg);
-  	margin-top: -40px;
+  	margin-top: -32px;
     display: block;
     color: #2857a4;
     font-size: 1.8rem;
@@ -277,7 +308,6 @@ section:nth-child(2n+1){
     font-size: 1.2rem;
 }
 .experience_duration{
-    color: #9e9b9b;
     font-weight: 100;
     color: grey;
     font-size: 1.1rem;
@@ -301,8 +331,8 @@ section:nth-child(2n+1){
 }
 
 .portfolio_image_container{
-    width: 18rem;
-    height: 18rem;
+    width: 16rem;
+    height: 14rem;
     max-width: 300px;
     display: flex;
     flex-wrap: wrap;
@@ -326,12 +356,11 @@ section:nth-child(2n+1){
     /* padding: 10px; */
 }
 .project_details p{
-    font-size: 27px;
+    font-size: 1.5rem;
     font-weight: 500;
-    line-height: 28px;
 }
 .project_details{
-    padding:30% 2% 0 2%;
+    padding:10% 2% 0 2%;
     box-sizing: border-box;
 }
 .portfolio_image_container:hover {
@@ -417,13 +446,13 @@ section:nth-child(2n+1){
 .contact_info span{
     margin-left: 0.4rem;
 }
-#contact #social-media{
+/* #contact #social-media{
     margin-top: 2vh;
     margin-bottom: 4vh;
 }
 #contact #social-media i{
     font-size: 30px;
-}
+} */
 /* rule for device width less than 600px */
 @media screen and (max-width:600px){
     /* Header*/
@@ -431,7 +460,7 @@ section:nth-child(2n+1){
         font-size: 1.3rem;
         font-weight: 650;
         color: white;
-        margin-top: 22vh;
+        /* margin-top: 22vh; */
     }
     /* image */
     #my-image {
@@ -458,9 +487,12 @@ section:nth-child(2n+1){
 
     /* portfolio */
     .portfolio_image_container{
-        margin: 15px;
+        margin: 25px 15px;
+        width: 16rem;
+        height: 12rem;
+        max-width: 300px;
     }
-
+    
     /* contact section */
     #contact{
         width: 92%;
