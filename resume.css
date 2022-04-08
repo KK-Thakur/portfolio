@@ -338,10 +338,16 @@ section:nth-child(2n+1){
     flex-wrap: wrap;
     margin: 45px;
     position: relative;
+    overflow: hidden; 
 }
 .portfolio_image_container img{
     width: 100%;
     height: 100%;
+    transition:0.3s linear;   
+}
+
+.portfolio_image_container:hover img{
+    transform: scale(1.1);
 }
 
 .project_details{
@@ -363,9 +369,7 @@ section:nth-child(2n+1){
     padding:10% 2% 0 2%;
     box-sizing: border-box;
 }
-.portfolio_image_container:hover {
-    box-shadow: 0px 0px 20px #74ADC8;
-}
+
 .portfolio_image_container:hover .project_details{
     background-color: #80808078;
     color: white;
@@ -537,8 +541,9 @@ section:nth-child(2n+1){
         height: 0;  
     }
     #navigation i{
-        font-size: 30px;
+        font-size: 35px;
         color: white;
+        padding-left: 40px;
     }
     #navigation a{
         /* text-align: justify; */
