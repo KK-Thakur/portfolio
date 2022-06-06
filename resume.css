@@ -285,12 +285,12 @@ section:nth-child(2n+1){
 }
 .timeline_logo {
     position: absolute;
-    width: 60px;
     overflow: hidden;
 }
 
 .timeline_logo > img {
-    width: 100%;
+    width: 60px;
+    height: 60px;
 }
 .m0{
     margin: 0px;
@@ -457,6 +457,61 @@ section:nth-child(2n+1){
 #contact #social-media i{
     font-size: 30px;
 } */
+
+@media screen and (max-width:700px){
+    #navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 20px;
+        box-sizing: border-box;
+        height: 0;  
+    }
+    #navigation i{
+        font-size: 35px;
+        color: white;
+        padding-left: 40px;
+    }
+    #navigation a{
+        /* text-align: justify; */
+        padding: 0;
+    }
+    #menu_list a{
+        display: block;
+        font-size: 0px;
+        line-height: 0px;
+    }
+    #menu_list{
+        height: 0;
+        width: 0;
+        text-align: justify;
+        padding: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 0;
+        z-index: 2;
+    }
+    #menu:hover #menu_list{
+        height: auto;
+        width: 120px;
+        background-color: rgb(14, 139, 177);
+    }
+    #menu:hover #menu_list a{
+        padding: 6px 0px 6px 5px;
+        font-size: 14px;
+    }
+
+    #celebrare_logo{
+        height: 40px !important;
+        width: 80px !important;
+    }
+}
+
+
 /* rule for device width less than 600px */
 @media screen and (max-width:600px){
     /* Header*/
@@ -531,53 +586,7 @@ section:nth-child(2n+1){
     }
 
 }
-@media screen and (max-width:700px){
-    #navigation{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        padding: 20px;
-        box-sizing: border-box;
-        height: 0;  
-    }
-    #navigation i{
-        font-size: 35px;
-        color: white;
-        padding-left: 40px;
-    }
-    #navigation a{
-        /* text-align: justify; */
-        padding: 0;
-    }
-    #menu_list a{
-        display: block;
-        font-size: 0px;
-        line-height: 0px;
-    }
-    #menu_list{
-        height: 0;
-        width: 0;
-        text-align: justify;
-        padding: 0;
-        transition: all 0.5s ease-in-out;
-    }
-    #menu{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        height: 0;
-        z-index: 2;
-    }
-    #menu:hover #menu_list{
-        height: auto;
-        width: 120px;
-        background-color: rgb(14, 139, 177);
-    }
-    #menu:hover #menu_list a{
-        padding: 6px 0px 6px 5px;
-        font-size: 14px;
-    }
-}
+
 @media screen and (max-width:350px){
     #name{
         font-size: 1.1rem;
