@@ -5,12 +5,12 @@ body{
 /* header */
     /* body header */
 #header_background{
-    height: 70vh;
+    height: 75vh;
     width: 100%;
-    background-image: url("img/background_image1.jpg");
+    background-image: url("img/5652030.jpg");
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     background-attachment: fixed;
     overflow: hidden;
 }
@@ -502,7 +502,7 @@ section:nth-child(2n+1){
     }
     #menu:hover #menu_list a{
         padding: 6px 0px 6px 5px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #celebrare_logo{
